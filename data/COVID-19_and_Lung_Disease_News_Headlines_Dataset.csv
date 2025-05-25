@@ -1,0 +1,251 @@
+News_ID,Date,Country,Region,Headline
+1,2020-03-18,UK,England,Shortage of ventilators reported in England.
+2,2020-10-10,Germany,Bavaria,"New variant spreads in Bavaria, vaccination urged."
+3,2021-05-26,Germany,Saxony,"Lung disease cases rise in Saxony, experts urge caution."
+4,2020-07-07,Brazil,Rio de Janeiro,"Rio de Janeiro sees decrease in cases, restrictions eased."
+5,2021-03-21,South Africa,Western Cape,"COVID-19 surge in Western Cape, hospitals under pressure."
+6,2020-12-20,Germany,Berlin,Shortage of ventilators reported in Berlin.
+7,2020-03-17,India,Kerala,"Kerala sees decrease in cases, restrictions eased."
+8,2020-04-24,South Africa,Gauteng,"New variant spreads in Gauteng, vaccination urged."
+9,2022-05-03,Germany,Berlin,"COVID-19 surge in Berlin, hospitals under pressure."
+10,2020-01-24,Italy,Veneto,Shortage of ventilators reported in Veneto.
+11,2022-12-09,USA,Texas,"COVID-19 surge in Texas, hospitals under pressure."
+12,2023-03-02,Germany,Saxony,"Lung disease cases rise in Saxony, experts urge caution."
+13,2021-03-28,Germany,Saxony,"Lung disease cases rise in Saxony, experts urge caution."
+14,2022-07-01,USA,Florida,"Florida sees decrease in cases, restrictions eased."
+15,2022-06-03,India,Delhi,"New variant spreads in Delhi, vaccination urged."
+16,2020-09-27,South Africa,Gauteng,"New variant spreads in Gauteng, vaccination urged."
+17,2023-03-16,India,Karnataka,"COVID-19 surge in Karnataka, hospitals under pressure."
+18,2020-06-23,South Africa,KwaZulu-Natal,Shortage of ventilators reported in KwaZulu-Natal.
+19,2020-09-24,South Africa,Western Cape,"Lung disease cases rise in Western Cape, experts urge caution."
+20,2021-02-09,Japan,Hokkaido,Shortage of ventilators reported in Hokkaido.
+21,2023-03-16,South Africa,Western Cape,"Lung disease cases rise in Western Cape, experts urge caution."
+22,2020-05-26,Italy,Lombardy,"New variant spreads in Lombardy, vaccination urged."
+23,2023-03-25,South Africa,KwaZulu-Natal,"COVID-19 surge in KwaZulu-Natal, hospitals under pressure."
+24,2022-05-17,India,Karnataka,"New variant spreads in Karnataka, vaccination urged."
+25,2021-10-18,Germany,Bavaria,"New variant spreads in Bavaria, vaccination urged."
+26,2020-12-12,USA,Texas,"New variant spreads in Texas, vaccination urged."
+27,2020-10-25,Japan,Hokkaido,Shortage of ventilators reported in Hokkaido.
+28,2021-02-12,USA,New York,"New variant spreads in New York, vaccination urged."
+29,2020-06-24,UK,Wales,"COVID-19 surge in Wales, hospitals under pressure."
+30,2020-10-29,USA,New York,"New variant spreads in New York, vaccination urged."
+31,2020-08-15,USA,Texas,"New variant spreads in Texas, vaccination urged."
+32,2020-02-16,Japan,Osaka,"New variant spreads in Osaka, vaccination urged."
+33,2023-01-06,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+34,2022-12-07,Italy,Veneto,"New variant spreads in Veneto, vaccination urged."
+35,2020-10-16,Japan,Hokkaido,"COVID-19 surge in Hokkaido, hospitals under pressure."
+36,2022-12-14,South Africa,Western Cape,"COVID-19 surge in Western Cape, hospitals under pressure."
+37,2020-05-03,Brazil,Sao Paulo,"New variant spreads in Sao Paulo, vaccination urged."
+38,2021-07-09,Italy,Veneto,"COVID-19 surge in Veneto, hospitals under pressure."
+39,2020-01-18,Japan,Hokkaido,"COVID-19 surge in Hokkaido, hospitals under pressure."
+40,2021-07-09,South Africa,Western Cape,"New variant spreads in Western Cape, vaccination urged."
+41,2021-08-22,India,Maharashtra,Shortage of ventilators reported in Maharashtra.
+42,2022-11-07,Italy,Lazio,"COVID-19 surge in Lazio, hospitals under pressure."
+43,2022-12-24,Germany,Berlin,"COVID-19 surge in Berlin, hospitals under pressure."
+44,2022-10-22,UK,England,Shortage of ventilators reported in England.
+45,2021-05-21,USA,California,"California sees decrease in cases, restrictions eased."
+46,2022-09-30,Brazil,Rio de Janeiro,Shortage of ventilators reported in Rio de Janeiro.
+47,2021-12-11,UK,England,"New variant spreads in England, vaccination urged."
+48,2021-09-11,Germany,Saxony,"Lung disease cases rise in Saxony, experts urge caution."
+49,2021-06-11,Brazil,Sao Paulo,Shortage of ventilators reported in Sao Paulo.
+50,2021-04-06,USA,Texas,"Lung disease cases rise in Texas, experts urge caution."
+51,2020-10-08,Germany,Berlin,"COVID-19 surge in Berlin, hospitals under pressure."
+52,2021-04-10,South Africa,Western Cape,Shortage of ventilators reported in Western Cape.
+53,2020-11-08,Italy,Veneto,Shortage of ventilators reported in Veneto.
+54,2021-11-05,Brazil,Bahia,Shortage of ventilators reported in Bahia.
+55,2020-10-10,UK,England,"England sees decrease in cases, restrictions eased."
+56,2021-09-24,Italy,Lombardy,"Lombardy sees decrease in cases, restrictions eased."
+57,2020-10-24,UK,Scotland,"Scotland sees decrease in cases, restrictions eased."
+58,2020-05-18,UK,Scotland,"Scotland sees decrease in cases, restrictions eased."
+59,2021-10-12,India,Delhi,"Lung disease cases rise in Delhi, experts urge caution."
+60,2022-04-27,USA,Texas,Shortage of ventilators reported in Texas.
+61,2021-07-14,Brazil,Rio de Janeiro,"Lung disease cases rise in Rio de Janeiro, experts urge caution."
+62,2020-09-26,Italy,Lombardy,"Lung disease cases rise in Lombardy, experts urge caution."
+63,2023-03-07,USA,Texas,"Texas sees decrease in cases, restrictions eased."
+64,2021-04-20,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+65,2020-06-11,USA,Texas,Shortage of ventilators reported in Texas.
+66,2022-08-18,UK,Wales,"New variant spreads in Wales, vaccination urged."
+67,2022-10-03,UK,Scotland,Shortage of ventilators reported in Scotland.
+68,2021-01-30,UK,England,"Lung disease cases rise in England, experts urge caution."
+69,2020-01-31,USA,Florida,"New variant spreads in Florida, vaccination urged."
+70,2021-02-19,South Africa,Gauteng,"Lung disease cases rise in Gauteng, experts urge caution."
+71,2022-06-18,India,Delhi,"Delhi sees decrease in cases, restrictions eased."
+72,2021-10-27,Japan,Hokkaido,Shortage of ventilators reported in Hokkaido.
+73,2022-04-09,Italy,Lazio,"COVID-19 surge in Lazio, hospitals under pressure."
+74,2021-10-02,South Africa,Western Cape,Shortage of ventilators reported in Western Cape.
+75,2022-07-13,USA,California,Shortage of ventilators reported in California.
+76,2022-11-28,USA,New York,"New York sees decrease in cases, restrictions eased."
+77,2020-03-21,South Africa,Western Cape,"Western Cape sees decrease in cases, restrictions eased."
+78,2020-04-10,South Africa,Western Cape,"Lung disease cases rise in Western Cape, experts urge caution."
+79,2022-03-26,Brazil,Rio de Janeiro,"New variant spreads in Rio de Janeiro, vaccination urged."
+80,2020-12-06,Brazil,Rio de Janeiro,Shortage of ventilators reported in Rio de Janeiro.
+81,2020-04-21,Brazil,Bahia,"Bahia sees decrease in cases, restrictions eased."
+82,2022-07-14,UK,Scotland,"COVID-19 surge in Scotland, hospitals under pressure."
+83,2023-04-13,India,Delhi,"Delhi sees decrease in cases, restrictions eased."
+84,2022-04-26,UK,Scotland,"New variant spreads in Scotland, vaccination urged."
+85,2021-01-01,Japan,Tokyo,Shortage of ventilators reported in Tokyo.
+86,2020-07-03,Italy,Lazio,"New variant spreads in Lazio, vaccination urged."
+87,2020-12-01,Germany,Saxony,"COVID-19 surge in Saxony, hospitals under pressure."
+88,2022-07-09,India,Maharashtra,"New variant spreads in Maharashtra, vaccination urged."
+89,2022-11-13,India,Karnataka,"Karnataka sees decrease in cases, restrictions eased."
+90,2023-02-01,UK,Scotland,Shortage of ventilators reported in Scotland.
+91,2021-11-17,USA,New York,"New York sees decrease in cases, restrictions eased."
+92,2020-10-23,UK,England,"Lung disease cases rise in England, experts urge caution."
+93,2021-09-22,USA,Florida,"New variant spreads in Florida, vaccination urged."
+94,2021-01-05,Japan,Osaka,"COVID-19 surge in Osaka, hospitals under pressure."
+95,2020-01-08,UK,England,"England sees decrease in cases, restrictions eased."
+96,2022-07-28,Brazil,Sao Paulo,Shortage of ventilators reported in Sao Paulo.
+97,2020-01-12,Japan,Hokkaido,"Hokkaido sees decrease in cases, restrictions eased."
+98,2021-03-20,Japan,Tokyo,"Tokyo sees decrease in cases, restrictions eased."
+99,2022-04-19,Japan,Osaka,Shortage of ventilators reported in Osaka.
+100,2021-05-16,India,Maharashtra,"Maharashtra sees decrease in cases, restrictions eased."
+101,2023-02-15,Brazil,Bahia,"Lung disease cases rise in Bahia, experts urge caution."
+102,2020-10-30,USA,New York,"COVID-19 surge in New York, hospitals under pressure."
+103,2020-10-24,Germany,Bavaria,"COVID-19 surge in Bavaria, hospitals under pressure."
+104,2020-06-28,Brazil,Rio de Janeiro,"COVID-19 surge in Rio de Janeiro, hospitals under pressure."
+105,2020-12-31,India,Karnataka,"Lung disease cases rise in Karnataka, experts urge caution."
+106,2023-03-18,Brazil,Bahia,"Bahia sees decrease in cases, restrictions eased."
+107,2023-03-31,UK,Scotland,"New variant spreads in Scotland, vaccination urged."
+108,2021-09-04,USA,California,"New variant spreads in California, vaccination urged."
+109,2020-05-18,Germany,Berlin,Shortage of ventilators reported in Berlin.
+110,2022-08-22,India,Kerala,"Lung disease cases rise in Kerala, experts urge caution."
+111,2021-11-05,India,Kerala,"Kerala sees decrease in cases, restrictions eased."
+112,2021-03-05,South Africa,Western Cape,"Lung disease cases rise in Western Cape, experts urge caution."
+113,2023-03-16,USA,California,"California sees decrease in cases, restrictions eased."
+114,2021-08-11,India,Karnataka,Shortage of ventilators reported in Karnataka.
+115,2022-12-12,Germany,Berlin,"Berlin sees decrease in cases, restrictions eased."
+116,2023-02-26,Germany,Bavaria,Shortage of ventilators reported in Bavaria.
+117,2021-01-03,Japan,Osaka,"Osaka sees decrease in cases, restrictions eased."
+118,2021-08-17,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+119,2020-02-19,USA,California,Shortage of ventilators reported in California.
+120,2022-04-29,India,Delhi,Shortage of ventilators reported in Delhi.
+121,2021-12-17,USA,Texas,"Texas sees decrease in cases, restrictions eased."
+122,2021-02-16,Italy,Lombardy,"New variant spreads in Lombardy, vaccination urged."
+123,2021-09-22,Brazil,Sao Paulo,"New variant spreads in Sao Paulo, vaccination urged."
+124,2020-08-21,Germany,Bavaria,"New variant spreads in Bavaria, vaccination urged."
+125,2023-03-11,Germany,Berlin,"Berlin sees decrease in cases, restrictions eased."
+126,2021-02-01,USA,New York,"New variant spreads in New York, vaccination urged."
+127,2022-09-08,Germany,Saxony,Shortage of ventilators reported in Saxony.
+128,2022-09-13,USA,New York,"Lung disease cases rise in New York, experts urge caution."
+129,2021-11-17,Japan,Hokkaido,Shortage of ventilators reported in Hokkaido.
+130,2020-04-24,South Africa,Western Cape,"Western Cape sees decrease in cases, restrictions eased."
+131,2021-10-08,Brazil,Bahia,"Bahia sees decrease in cases, restrictions eased."
+132,2023-03-28,USA,New York,"New variant spreads in New York, vaccination urged."
+133,2020-11-01,Germany,Bavaria,"New variant spreads in Bavaria, vaccination urged."
+134,2022-02-07,USA,Texas,"Texas sees decrease in cases, restrictions eased."
+135,2022-03-08,UK,Wales,"Lung disease cases rise in Wales, experts urge caution."
+136,2021-10-06,India,Kerala,"COVID-19 surge in Kerala, hospitals under pressure."
+137,2020-06-26,Brazil,Rio de Janeiro,Shortage of ventilators reported in Rio de Janeiro.
+138,2022-07-14,Italy,Lazio,"New variant spreads in Lazio, vaccination urged."
+139,2021-09-11,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+140,2020-03-17,India,Kerala,"Lung disease cases rise in Kerala, experts urge caution."
+141,2022-11-02,India,Karnataka,"COVID-19 surge in Karnataka, hospitals under pressure."
+142,2020-11-11,Japan,Hokkaido,"Lung disease cases rise in Hokkaido, experts urge caution."
+143,2022-12-08,Germany,Berlin,"New variant spreads in Berlin, vaccination urged."
+144,2020-07-20,Germany,Bavaria,"Bavaria sees decrease in cases, restrictions eased."
+145,2020-03-15,UK,England,Shortage of ventilators reported in England.
+146,2022-12-05,South Africa,Western Cape,"COVID-19 surge in Western Cape, hospitals under pressure."
+147,2020-03-31,USA,Texas,"Texas sees decrease in cases, restrictions eased."
+148,2022-08-14,India,Kerala,"COVID-19 surge in Kerala, hospitals under pressure."
+149,2020-02-16,India,Kerala,"Kerala sees decrease in cases, restrictions eased."
+150,2021-03-05,Brazil,Bahia,"New variant spreads in Bahia, vaccination urged."
+151,2021-08-09,Italy,Lombardy,"New variant spreads in Lombardy, vaccination urged."
+152,2020-08-28,Germany,Berlin,"New variant spreads in Berlin, vaccination urged."
+153,2021-07-14,UK,England,"COVID-19 surge in England, hospitals under pressure."
+154,2021-02-27,USA,California,"California sees decrease in cases, restrictions eased."
+155,2021-10-14,Germany,Saxony,"New variant spreads in Saxony, vaccination urged."
+156,2021-08-03,UK,Wales,"Wales sees decrease in cases, restrictions eased."
+157,2020-05-25,Italy,Lombardy,"New variant spreads in Lombardy, vaccination urged."
+158,2022-06-27,Germany,Saxony,"COVID-19 surge in Saxony, hospitals under pressure."
+159,2022-08-22,UK,England,"COVID-19 surge in England, hospitals under pressure."
+160,2020-04-20,India,Karnataka,"COVID-19 surge in Karnataka, hospitals under pressure."
+161,2021-01-01,South Africa,KwaZulu-Natal,"KwaZulu-Natal sees decrease in cases, restrictions eased."
+162,2021-12-29,Japan,Hokkaido,"New variant spreads in Hokkaido, vaccination urged."
+163,2022-12-28,Germany,Bavaria,"COVID-19 surge in Bavaria, hospitals under pressure."
+164,2020-09-26,Japan,Hokkaido,"COVID-19 surge in Hokkaido, hospitals under pressure."
+165,2022-07-22,Japan,Tokyo,"New variant spreads in Tokyo, vaccination urged."
+166,2021-04-19,Japan,Osaka,"Lung disease cases rise in Osaka, experts urge caution."
+167,2021-06-12,UK,Wales,"New variant spreads in Wales, vaccination urged."
+168,2021-11-07,South Africa,Gauteng,"New variant spreads in Gauteng, vaccination urged."
+169,2020-03-02,Japan,Osaka,"COVID-19 surge in Osaka, hospitals under pressure."
+170,2021-12-20,Japan,Tokyo,Shortage of ventilators reported in Tokyo.
+171,2021-08-01,Japan,Tokyo,"New variant spreads in Tokyo, vaccination urged."
+172,2020-07-29,UK,Wales,Shortage of ventilators reported in Wales.
+173,2023-02-12,India,Kerala,"COVID-19 surge in Kerala, hospitals under pressure."
+174,2022-08-02,Brazil,Bahia,Shortage of ventilators reported in Bahia.
+175,2021-05-14,South Africa,Gauteng,"Gauteng sees decrease in cases, restrictions eased."
+176,2022-02-25,UK,Scotland,"COVID-19 surge in Scotland, hospitals under pressure."
+177,2022-06-01,Germany,Bavaria,Shortage of ventilators reported in Bavaria.
+178,2021-04-28,Germany,Saxony,"Lung disease cases rise in Saxony, experts urge caution."
+179,2020-08-22,India,Karnataka,"Karnataka sees decrease in cases, restrictions eased."
+180,2023-02-10,Japan,Osaka,"COVID-19 surge in Osaka, hospitals under pressure."
+181,2021-09-22,Japan,Tokyo,Shortage of ventilators reported in Tokyo.
+182,2022-02-15,India,Maharashtra,"New variant spreads in Maharashtra, vaccination urged."
+183,2020-05-05,Japan,Hokkaido,"COVID-19 surge in Hokkaido, hospitals under pressure."
+184,2023-04-04,Italy,Lombardy,"COVID-19 surge in Lombardy, hospitals under pressure."
+185,2020-11-01,UK,Wales,Shortage of ventilators reported in Wales.
+186,2023-03-29,Brazil,Rio de Janeiro,Shortage of ventilators reported in Rio de Janeiro.
+187,2021-10-10,Italy,Lombardy,"New variant spreads in Lombardy, vaccination urged."
+188,2021-12-06,Brazil,Rio de Janeiro,"COVID-19 surge in Rio de Janeiro, hospitals under pressure."
+189,2020-09-18,USA,Florida,"New variant spreads in Florida, vaccination urged."
+190,2023-01-29,USA,Texas,"COVID-19 surge in Texas, hospitals under pressure."
+191,2020-08-12,USA,Texas,"New variant spreads in Texas, vaccination urged."
+192,2022-06-03,USA,New York,"New York sees decrease in cases, restrictions eased."
+193,2021-10-13,South Africa,Western Cape,Shortage of ventilators reported in Western Cape.
+194,2022-06-10,South Africa,KwaZulu-Natal,"KwaZulu-Natal sees decrease in cases, restrictions eased."
+195,2020-12-21,Italy,Veneto,Shortage of ventilators reported in Veneto.
+196,2023-02-11,UK,England,Shortage of ventilators reported in England.
+197,2020-11-11,Germany,Berlin,"New variant spreads in Berlin, vaccination urged."
+198,2020-01-24,UK,England,"COVID-19 surge in England, hospitals under pressure."
+199,2022-09-23,USA,New York,Shortage of ventilators reported in New York.
+200,2020-10-08,UK,England,Shortage of ventilators reported in England.
+201,2022-05-21,Japan,Hokkaido,"Hokkaido sees decrease in cases, restrictions eased."
+202,2022-11-09,UK,Scotland,Shortage of ventilators reported in Scotland.
+203,2021-12-28,Japan,Osaka,"Lung disease cases rise in Osaka, experts urge caution."
+204,2020-01-16,UK,Scotland,"Scotland sees decrease in cases, restrictions eased."
+205,2021-04-29,Japan,Hokkaido,"Hokkaido sees decrease in cases, restrictions eased."
+206,2023-01-23,Brazil,Rio de Janeiro,"Rio de Janeiro sees decrease in cases, restrictions eased."
+207,2020-03-18,Germany,Bavaria,"Bavaria sees decrease in cases, restrictions eased."
+208,2022-01-24,Japan,Hokkaido,"COVID-19 surge in Hokkaido, hospitals under pressure."
+209,2020-06-12,Japan,Hokkaido,"Lung disease cases rise in Hokkaido, experts urge caution."
+210,2022-11-24,Brazil,Rio de Janeiro,"COVID-19 surge in Rio de Janeiro, hospitals under pressure."
+211,2022-08-25,India,Delhi,"COVID-19 surge in Delhi, hospitals under pressure."
+212,2020-04-18,Brazil,Bahia,"New variant spreads in Bahia, vaccination urged."
+213,2022-07-18,USA,Florida,"Florida sees decrease in cases, restrictions eased."
+214,2021-11-09,Japan,Hokkaido,Shortage of ventilators reported in Hokkaido.
+215,2021-08-15,Germany,Berlin,"Lung disease cases rise in Berlin, experts urge caution."
+216,2023-02-28,USA,Texas,"New variant spreads in Texas, vaccination urged."
+217,2023-03-30,USA,Florida,"Lung disease cases rise in Florida, experts urge caution."
+218,2020-02-25,USA,Texas,"New variant spreads in Texas, vaccination urged."
+219,2020-09-16,Japan,Tokyo,"Tokyo sees decrease in cases, restrictions eased."
+220,2021-05-31,India,Kerala,"Lung disease cases rise in Kerala, experts urge caution."
+221,2021-06-10,Brazil,Rio de Janeiro,"COVID-19 surge in Rio de Janeiro, hospitals under pressure."
+222,2020-11-05,India,Delhi,Shortage of ventilators reported in Delhi.
+223,2021-06-19,Germany,Bavaria,"Lung disease cases rise in Bavaria, experts urge caution."
+224,2022-12-16,Japan,Tokyo,"COVID-19 surge in Tokyo, hospitals under pressure."
+225,2020-10-24,Germany,Bavaria,"Bavaria sees decrease in cases, restrictions eased."
+226,2022-04-25,UK,Scotland,Shortage of ventilators reported in Scotland.
+227,2022-06-20,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+228,2021-12-07,Italy,Veneto,"COVID-19 surge in Veneto, hospitals under pressure."
+229,2020-04-17,Brazil,Sao Paulo,"Lung disease cases rise in Sao Paulo, experts urge caution."
+230,2022-09-02,Japan,Osaka,"New variant spreads in Osaka, vaccination urged."
+231,2022-12-26,Japan,Hokkaido,"Lung disease cases rise in Hokkaido, experts urge caution."
+232,2022-03-09,South Africa,Western Cape,Shortage of ventilators reported in Western Cape.
+233,2022-12-22,Brazil,Sao Paulo,Shortage of ventilators reported in Sao Paulo.
+234,2022-07-08,USA,Texas,Shortage of ventilators reported in Texas.
+235,2020-03-25,Germany,Saxony,"COVID-19 surge in Saxony, hospitals under pressure."
+236,2021-07-12,Germany,Berlin,"New variant spreads in Berlin, vaccination urged."
+237,2020-07-20,Brazil,Rio de Janeiro,"New variant spreads in Rio de Janeiro, vaccination urged."
+238,2021-05-10,South Africa,KwaZulu-Natal,"KwaZulu-Natal sees decrease in cases, restrictions eased."
+239,2021-11-22,Italy,Veneto,"Lung disease cases rise in Veneto, experts urge caution."
+240,2020-01-22,Germany,Saxony,"COVID-19 surge in Saxony, hospitals under pressure."
+241,2022-04-22,India,Maharashtra,"COVID-19 surge in Maharashtra, hospitals under pressure."
+242,2021-12-20,India,Karnataka,"Lung disease cases rise in Karnataka, experts urge caution."
+243,2021-01-30,Brazil,Rio de Janeiro,"COVID-19 surge in Rio de Janeiro, hospitals under pressure."
+244,2020-04-26,USA,California,"California sees decrease in cases, restrictions eased."
+245,2020-09-06,Italy,Veneto,"COVID-19 surge in Veneto, hospitals under pressure."
+246,2022-02-08,India,Delhi,"Delhi sees decrease in cases, restrictions eased."
+247,2021-01-12,UK,England,"New variant spreads in England, vaccination urged."
+248,2020-06-04,Brazil,Rio de Janeiro,Shortage of ventilators reported in Rio de Janeiro.
+249,2021-10-24,Brazil,Rio de Janeiro,"New variant spreads in Rio de Janeiro, vaccination urged."
+250,2021-07-21,UK,England,"COVID-19 surge in England, hospitals under pressure."

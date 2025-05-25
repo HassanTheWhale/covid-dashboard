@@ -1,0 +1,401 @@
+Record_ID,Date,Country,Region,COVID_Cases,Lung_Disease_Cases,Deaths
+1,2021-11-08,Germany,Bavaria,505,62,12
+2,2022-11-04,Brazil,Sao Paulo,451,48,12
+3,2022-02-14,Italy,Veneto,533,58,9
+4,2020-06-10,South Africa,Gauteng,463,37,7
+5,2023-03-19,Japan,Osaka,485,46,7
+6,2022-10-17,Japan,Tokyo,483,54,7
+7,2020-08-31,Japan,Osaka,473,59,5
+8,2020-02-06,Japan,Hokkaido,487,57,11
+9,2022-04-24,India,Karnataka,473,45,8
+10,2020-07-05,USA,California,511,59,11
+11,2023-02-25,Brazil,Bahia,492,50,10
+12,2022-07-23,Italy,Veneto,525,59,9
+13,2020-04-21,Germany,Berlin,518,42,12
+14,2021-11-10,Italy,Lazio,509,51,12
+15,2022-01-14,Japan,Hokkaido,504,45,6
+16,2020-07-18,Japan,Tokyo,521,38,7
+17,2021-11-30,Italy,Lombardy,480,59,8
+18,2021-08-20,Germany,Saxony,529,53,7
+19,2020-08-05,Germany,Saxony,490,50,7
+20,2022-10-05,USA,New York,536,49,7
+21,2022-04-18,UK,Wales,495,48,7
+22,2021-02-05,India,Kerala,479,50,15
+23,2022-03-15,Italy,Lombardy,500,49,7
+24,2021-01-25,Italy,Lazio,497,40,8
+25,2022-04-28,Germany,Bavaria,492,48,6
+26,2022-07-11,USA,California,482,51,9
+27,2022-10-29,Japan,Hokkaido,501,44,8
+28,2020-01-09,UK,Scotland,512,60,8
+29,2023-04-13,USA,Florida,561,55,10
+30,2020-12-28,Japan,Hokkaido,461,45,7
+31,2020-09-19,UK,Wales,506,50,10
+32,2021-10-21,India,Karnataka,517,52,14
+33,2021-05-23,South Africa,KwaZulu-Natal,452,43,11
+34,2021-12-03,Brazil,Rio de Janeiro,524,55,9
+35,2020-09-30,Brazil,Rio de Janeiro,487,49,6
+36,2022-11-15,UK,Scotland,534,55,17
+37,2023-01-26,Brazil,Bahia,504,61,9
+38,2023-02-07,Germany,Saxony,524,39,10
+39,2021-03-05,Italy,Lombardy,457,55,12
+40,2021-12-08,Brazil,Bahia,450,54,12
+41,2020-12-30,UK,Wales,463,50,12
+42,2020-08-24,Germany,Saxony,498,42,13
+43,2022-09-10,Germany,Saxony,495,52,12
+44,2022-12-29,South Africa,Western Cape,490,48,9
+45,2020-01-27,Brazil,Rio de Janeiro,467,48,6
+46,2022-02-19,India,Maharashtra,495,60,8
+47,2020-04-25,UK,England,480,53,9
+48,2020-11-25,Italy,Lazio,502,48,14
+49,2021-05-28,Brazil,Bahia,525,58,10
+50,2021-08-27,UK,England,483,50,8
+51,2020-03-07,Italy,Veneto,488,45,9
+52,2020-07-28,Germany,Berlin,490,48,12
+53,2023-02-23,Italy,Veneto,477,44,9
+54,2022-11-12,South Africa,Gauteng,507,44,6
+55,2020-04-06,Brazil,Bahia,495,48,11
+56,2022-05-03,South Africa,KwaZulu-Natal,520,48,11
+57,2020-04-20,Germany,Saxony,514,61,11
+58,2021-02-19,USA,Texas,495,57,16
+59,2022-01-23,Japan,Tokyo,497,59,10
+60,2021-01-31,Italy,Veneto,493,42,13
+61,2020-12-29,Brazil,Rio de Janeiro,474,45,6
+62,2020-12-21,India,Delhi,509,46,10
+63,2020-03-24,India,Karnataka,511,54,10
+64,2023-02-13,South Africa,KwaZulu-Natal,516,54,12
+65,2020-11-25,Brazil,Sao Paulo,528,49,10
+66,2021-11-07,Brazil,Sao Paulo,489,58,16
+67,2020-11-13,Japan,Hokkaido,524,56,15
+68,2021-10-22,USA,New York,486,56,14
+69,2022-10-01,USA,Texas,511,46,12
+70,2021-10-12,Germany,Bavaria,512,48,14
+71,2022-12-02,Italy,Lombardy,513,53,8
+72,2022-05-01,India,Delhi,471,58,12
+73,2021-12-16,South Africa,Gauteng,499,46,8
+74,2021-11-10,Italy,Lombardy,508,51,8
+75,2021-08-24,Germany,Berlin,563,60,12
+76,2022-12-22,Italy,Veneto,458,52,13
+77,2020-01-19,Japan,Hokkaido,485,53,11
+78,2022-07-01,India,Kerala,515,53,9
+79,2021-05-14,Italy,Veneto,465,62,5
+80,2022-02-20,USA,Texas,514,45,11
+81,2021-06-09,India,Karnataka,556,50,12
+82,2022-11-24,Brazil,Sao Paulo,507,44,9
+83,2022-11-07,Germany,Saxony,496,52,9
+84,2020-03-30,Japan,Osaka,494,54,6
+85,2021-01-29,Brazil,Bahia,471,54,10
+86,2020-06-17,Germany,Saxony,478,69,10
+87,2023-01-06,India,Delhi,503,35,11
+88,2021-03-07,USA,California,482,57,10
+89,2022-05-18,Italy,Veneto,483,52,13
+90,2023-01-06,India,Delhi,516,53,7
+91,2020-05-27,South Africa,Western Cape,504,61,9
+92,2022-07-29,UK,England,518,46,10
+93,2020-06-28,Germany,Bavaria,497,64,6
+94,2020-12-30,India,Maharashtra,455,50,12
+95,2020-05-24,Brazil,Bahia,510,41,12
+96,2022-04-14,Italy,Lazio,494,41,7
+97,2022-04-08,South Africa,KwaZulu-Natal,503,59,9
+98,2020-02-04,South Africa,KwaZulu-Natal,502,51,9
+99,2020-08-30,South Africa,Western Cape,473,49,12
+100,2023-04-14,USA,California,476,50,16
+101,2022-01-02,USA,California,499,66,14
+102,2021-09-09,India,Kerala,471,53,7
+103,2022-06-15,India,Kerala,524,47,11
+104,2020-03-04,South Africa,KwaZulu-Natal,508,52,12
+105,2022-12-28,Japan,Tokyo,508,43,12
+106,2022-03-11,Italy,Lombardy,501,53,10
+107,2020-10-22,Brazil,Bahia,477,48,9
+108,2022-02-03,Brazil,Bahia,499,58,11
+109,2020-09-09,USA,New York,459,51,5
+110,2023-03-18,USA,California,503,58,5
+111,2023-01-26,South Africa,Western Cape,470,50,8
+112,2021-03-06,India,Kerala,511,48,10
+113,2022-04-25,Germany,Bavaria,489,52,8
+114,2021-01-11,UK,England,482,42,12
+115,2021-06-01,Italy,Veneto,498,37,9
+116,2021-01-06,Italy,Lombardy,530,44,9
+117,2023-01-30,USA,Florida,495,59,12
+118,2020-05-17,India,Kerala,495,48,12
+119,2021-02-08,Brazil,Sao Paulo,471,43,12
+120,2022-01-01,Japan,Osaka,490,51,12
+121,2021-04-25,UK,Wales,521,52,7
+122,2020-05-22,India,Kerala,495,50,8
+123,2022-09-22,Italy,Lazio,546,49,13
+124,2021-09-18,Japan,Osaka,494,61,11
+125,2023-03-06,UK,Wales,506,48,16
+126,2022-05-27,Germany,Berlin,477,43,7
+127,2021-10-03,UK,England,501,45,14
+128,2022-06-12,Italy,Lombardy,510,60,11
+129,2020-10-02,Brazil,Rio de Janeiro,512,45,3
+130,2022-08-05,Germany,Berlin,533,44,15
+131,2021-09-17,Japan,Osaka,511,56,9
+132,2020-08-10,Japan,Hokkaido,509,46,13
+133,2020-06-16,UK,Wales,471,55,9
+134,2023-01-08,Brazil,Sao Paulo,492,47,4
+135,2020-06-05,Italy,Lazio,468,46,14
+136,2022-11-04,India,Maharashtra,522,46,18
+137,2021-03-11,USA,Florida,527,54,13
+138,2023-01-18,USA,Texas,529,35,11
+139,2020-10-31,Japan,Hokkaido,492,58,7
+140,2021-04-02,Germany,Berlin,501,49,6
+141,2022-08-09,Brazil,Sao Paulo,511,47,13
+142,2022-01-15,India,Karnataka,494,54,8
+143,2020-12-05,USA,New York,546,56,7
+144,2020-11-22,UK,Scotland,503,47,9
+145,2023-03-04,UK,Wales,496,50,8
+146,2022-09-17,UK,Wales,511,48,14
+147,2021-03-24,Germany,Bavaria,523,48,8
+148,2020-05-08,Japan,Tokyo,501,49,9
+149,2021-04-24,Brazil,Rio de Janeiro,479,44,12
+150,2022-11-26,USA,New York,469,48,8
+151,2022-08-19,Germany,Berlin,452,32,11
+152,2020-03-22,Japan,Tokyo,483,39,8
+153,2022-12-03,Germany,Bavaria,494,57,14
+154,2021-06-23,Brazil,Bahia,487,44,7
+155,2022-02-14,UK,Scotland,486,47,15
+156,2020-06-08,Germany,Saxony,489,66,8
+157,2021-04-01,Brazil,Rio de Janeiro,488,56,12
+158,2021-12-07,South Africa,KwaZulu-Natal,459,43,7
+159,2020-01-14,Japan,Osaka,501,43,8
+160,2020-12-05,UK,Scotland,493,42,7
+161,2022-11-19,Italy,Lombardy,500,55,7
+162,2020-11-03,Brazil,Sao Paulo,463,48,8
+163,2022-01-11,UK,England,518,56,12
+164,2022-04-29,India,Delhi,538,53,5
+165,2020-08-20,Germany,Saxony,488,47,11
+166,2022-09-07,Japan,Hokkaido,492,43,8
+167,2020-11-26,Japan,Tokyo,506,47,7
+168,2021-05-14,South Africa,Gauteng,521,40,9
+169,2023-03-20,USA,New York,488,52,9
+170,2022-11-15,UK,England,473,40,12
+171,2020-04-24,USA,New York,492,47,13
+172,2021-01-03,UK,Scotland,531,45,8
+173,2023-02-28,South Africa,Western Cape,538,47,11
+174,2020-06-24,USA,Texas,490,51,14
+175,2022-08-23,Italy,Lazio,496,47,17
+176,2021-03-25,Japan,Tokyo,516,58,4
+177,2020-10-19,South Africa,Western Cape,511,55,12
+178,2022-11-12,UK,Wales,517,43,13
+179,2021-12-02,Brazil,Sao Paulo,495,61,13
+180,2020-05-20,Japan,Hokkaido,497,43,8
+181,2022-02-28,Italy,Lazio,525,42,12
+182,2020-02-03,UK,England,505,53,16
+183,2022-10-29,Italy,Veneto,489,52,10
+184,2020-07-16,South Africa,Gauteng,489,38,14
+185,2020-03-20,UK,Scotland,495,54,12
+186,2022-09-14,India,Maharashtra,480,46,14
+187,2023-01-09,UK,Wales,496,50,6
+188,2022-12-05,USA,Florida,502,52,9
+189,2020-03-29,South Africa,KwaZulu-Natal,539,52,13
+190,2022-09-14,South Africa,Gauteng,507,51,11
+191,2023-03-25,South Africa,KwaZulu-Natal,522,38,12
+192,2020-10-01,India,Karnataka,485,47,16
+193,2021-04-21,Brazil,Rio de Janeiro,489,46,13
+194,2023-01-18,India,Kerala,463,50,7
+195,2021-01-22,South Africa,KwaZulu-Natal,500,36,6
+196,2023-03-29,USA,California,469,49,8
+197,2022-02-07,India,Maharashtra,491,52,8
+198,2021-10-08,Italy,Veneto,497,56,9
+199,2020-08-06,South Africa,KwaZulu-Natal,453,62,7
+200,2023-04-13,UK,Scotland,562,52,12
+201,2023-01-02,Brazil,Rio de Janeiro,505,48,12
+202,2022-01-18,South Africa,Western Cape,487,61,12
+203,2022-03-24,Brazil,Bahia,477,49,11
+204,2023-02-04,Italy,Lazio,488,43,7
+205,2022-01-28,Japan,Tokyo,495,49,15
+206,2021-09-20,Japan,Osaka,502,48,12
+207,2022-03-26,Germany,Saxony,545,46,8
+208,2020-08-31,UK,Wales,516,48,12
+209,2020-11-27,Italy,Lazio,521,59,18
+210,2022-11-07,India,Delhi,488,48,10
+211,2023-02-01,South Africa,KwaZulu-Natal,481,46,6
+212,2022-03-07,USA,New York,493,52,6
+213,2020-10-24,USA,California,511,54,11
+214,2022-06-10,Japan,Hokkaido,513,50,13
+215,2021-06-22,India,Maharashtra,521,49,13
+216,2020-06-12,Italy,Lazio,528,37,10
+217,2022-03-31,USA,Florida,479,51,8
+218,2020-04-27,Brazil,Bahia,527,43,9
+219,2022-10-09,UK,Wales,498,42,17
+220,2021-02-17,Japan,Tokyo,477,49,5
+221,2020-03-09,Brazil,Sao Paulo,485,32,13
+222,2020-12-13,Italy,Veneto,498,48,13
+223,2021-05-04,USA,Texas,518,49,11
+224,2020-06-26,USA,New York,532,46,11
+225,2021-12-24,Brazil,Rio de Janeiro,473,45,7
+226,2023-04-15,South Africa,KwaZulu-Natal,484,38,8
+227,2020-02-01,Italy,Veneto,536,39,19
+228,2023-01-30,India,Maharashtra,497,45,11
+229,2023-02-19,Brazil,Bahia,527,52,11
+230,2021-07-20,Germany,Berlin,507,56,9
+231,2021-02-02,Italy,Veneto,496,50,11
+232,2023-03-23,Japan,Osaka,522,44,8
+233,2020-12-24,USA,Texas,510,49,11
+234,2020-08-06,South Africa,Western Cape,472,59,12
+235,2021-11-27,India,Kerala,464,48,13
+236,2023-01-06,India,Kerala,449,47,12
+237,2022-06-25,Brazil,Bahia,464,36,7
+238,2022-09-17,South Africa,Western Cape,553,43,13
+239,2022-07-28,Italy,Lazio,470,44,10
+240,2020-02-26,Japan,Hokkaido,484,58,12
+241,2021-06-12,Japan,Tokyo,455,46,14
+242,2021-03-27,India,Karnataka,485,46,15
+243,2022-04-24,Italy,Lazio,508,34,10
+244,2023-01-02,Germany,Saxony,477,46,10
+245,2021-05-23,USA,Texas,541,54,14
+246,2022-03-28,Brazil,Sao Paulo,509,52,10
+247,2023-02-09,Germany,Bavaria,462,45,8
+248,2021-10-04,UK,Scotland,467,59,5
+249,2023-03-20,Germany,Bavaria,484,65,6
+250,2021-01-24,Brazil,Sao Paulo,485,45,16
+251,2021-02-12,Japan,Hokkaido,513,75,12
+252,2021-05-10,Italy,Veneto,536,32,11
+253,2021-04-14,Brazil,Sao Paulo,495,63,9
+254,2021-12-30,Italy,Lombardy,491,47,12
+255,2020-09-02,UK,England,484,40,10
+256,2020-01-14,India,Karnataka,461,57,10
+257,2022-01-30,USA,Florida,526,47,6
+258,2023-03-22,Germany,Berlin,505,43,4
+259,2021-01-09,Brazil,Rio de Janeiro,525,34,14
+260,2021-03-30,Brazil,Rio de Janeiro,490,45,13
+261,2022-12-12,UK,England,505,54,9
+262,2023-01-12,South Africa,KwaZulu-Natal,471,53,12
+263,2022-03-17,USA,Texas,556,52,14
+264,2020-09-03,UK,Scotland,482,62,10
+265,2020-01-18,Japan,Osaka,473,44,13
+266,2022-02-16,USA,New York,533,53,13
+267,2022-01-10,India,Kerala,477,39,7
+268,2023-01-28,Brazil,Sao Paulo,523,53,13
+269,2021-07-05,Brazil,Sao Paulo,508,60,7
+270,2021-12-03,Japan,Hokkaido,482,40,15
+271,2022-10-18,Germany,Bavaria,508,49,17
+272,2022-05-08,South Africa,Gauteng,530,44,9
+273,2022-03-31,Germany,Berlin,509,45,12
+274,2021-01-03,Brazil,Rio de Janeiro,523,53,12
+275,2021-04-13,UK,Wales,484,45,10
+276,2021-04-27,India,Kerala,562,46,9
+277,2021-02-05,South Africa,KwaZulu-Natal,492,47,12
+278,2020-11-02,UK,Wales,523,37,6
+279,2020-12-27,Japan,Tokyo,541,58,8
+280,2020-10-02,South Africa,KwaZulu-Natal,509,47,14
+281,2021-09-06,Germany,Berlin,521,60,12
+282,2023-03-08,Brazil,Bahia,495,39,15
+283,2020-07-21,USA,Florida,480,46,9
+284,2021-03-17,UK,England,473,49,8
+285,2020-07-16,Brazil,Rio de Janeiro,482,58,8
+286,2021-11-16,Japan,Hokkaido,511,50,12
+287,2022-01-07,Brazil,Rio de Janeiro,499,62,10
+288,2020-02-10,Brazil,Rio de Janeiro,505,43,11
+289,2021-12-20,South Africa,Gauteng,503,47,12
+290,2023-03-25,Italy,Veneto,519,42,10
+291,2021-12-28,UK,Scotland,463,53,11
+292,2022-11-11,Germany,Saxony,489,55,7
+293,2022-07-04,Japan,Hokkaido,485,44,8
+294,2021-08-09,India,Karnataka,524,42,12
+295,2020-10-23,Japan,Hokkaido,508,47,14
+296,2021-11-21,UK,Wales,549,56,8
+297,2023-03-16,South Africa,Western Cape,526,66,7
+298,2020-06-11,South Africa,Gauteng,505,33,16
+299,2021-04-12,UK,Scotland,523,51,11
+300,2021-08-19,Germany,Berlin,512,56,7
+301,2022-03-20,Brazil,Bahia,476,52,18
+302,2022-01-13,Brazil,Rio de Janeiro,459,44,12
+303,2020-12-08,Japan,Osaka,464,59,10
+304,2020-09-13,UK,England,529,41,7
+305,2021-05-30,Italy,Veneto,518,50,17
+306,2020-12-07,India,Delhi,551,48,11
+307,2020-07-14,South Africa,Gauteng,499,58,9
+308,2023-01-28,India,Karnataka,505,57,9
+309,2022-03-24,USA,California,487,49,11
+310,2021-06-21,India,Maharashtra,491,70,8
+311,2022-03-09,UK,England,497,43,13
+312,2021-05-21,Brazil,Sao Paulo,504,55,15
+313,2020-09-15,Brazil,Rio de Janeiro,530,55,16
+314,2020-12-15,UK,Wales,477,38,12
+315,2021-12-31,USA,California,521,50,7
+316,2022-08-14,Germany,Berlin,492,51,10
+317,2022-06-30,Brazil,Bahia,468,56,8
+318,2023-01-09,UK,Wales,515,58,9
+319,2022-07-24,UK,Wales,492,50,6
+320,2022-12-29,South Africa,Western Cape,508,58,11
+321,2022-09-13,Brazil,Rio de Janeiro,476,46,7
+322,2022-06-23,Italy,Lombardy,473,53,11
+323,2022-04-24,Brazil,Rio de Janeiro,549,46,7
+324,2021-09-13,Brazil,Sao Paulo,490,57,9
+325,2022-12-07,USA,California,474,54,9
+326,2021-08-10,UK,Scotland,508,48,16
+327,2020-01-18,Japan,Hokkaido,476,58,5
+328,2021-09-05,Japan,Osaka,516,52,5
+329,2021-08-22,USA,Florida,476,51,7
+330,2023-01-27,Italy,Lombardy,527,39,12
+331,2022-04-23,Germany,Bavaria,541,51,13
+332,2021-05-26,South Africa,KwaZulu-Natal,491,43,11
+333,2022-03-09,UK,Wales,514,51,10
+334,2021-06-22,South Africa,Gauteng,493,46,15
+335,2021-05-05,India,Karnataka,462,46,12
+336,2022-12-25,Brazil,Rio de Janeiro,485,55,12
+337,2021-01-20,Brazil,Rio de Janeiro,508,51,5
+338,2020-10-06,India,Delhi,551,49,12
+339,2022-07-21,Brazil,Sao Paulo,482,42,10
+340,2022-10-04,Japan,Osaka,483,53,9
+341,2020-02-09,Italy,Lazio,506,51,17
+342,2022-12-31,UK,England,457,44,11
+343,2020-07-28,USA,New York,516,52,10
+344,2020-09-13,Brazil,Rio de Janeiro,504,45,5
+345,2020-01-17,Japan,Hokkaido,517,50,10
+346,2020-11-04,Italy,Lombardy,512,46,15
+347,2021-03-20,USA,Florida,478,48,13
+348,2021-09-30,Germany,Berlin,454,49,13
+349,2022-08-07,Japan,Osaka,484,55,11
+350,2020-06-13,USA,Texas,456,48,9
+351,2021-06-29,UK,England,522,51,17
+352,2023-01-17,South Africa,Gauteng,510,50,11
+353,2021-01-28,Japan,Tokyo,506,53,7
+354,2020-01-26,Brazil,Rio de Janeiro,551,48,13
+355,2022-02-27,India,Delhi,494,70,9
+356,2020-03-09,Japan,Tokyo,480,43,10
+357,2020-07-11,Italy,Lazio,463,59,11
+358,2022-03-07,Italy,Lazio,521,47,11
+359,2020-11-20,Brazil,Rio de Janeiro,540,37,11
+360,2021-06-02,USA,California,477,70,10
+361,2021-09-03,Japan,Hokkaido,504,41,9
+362,2020-04-16,Italy,Lazio,505,56,9
+363,2021-04-28,Italy,Lombardy,482,43,6
+364,2020-01-31,South Africa,KwaZulu-Natal,513,48,11
+365,2023-04-12,UK,Scotland,461,38,11
+366,2021-05-12,India,Karnataka,478,49,9
+367,2023-04-05,USA,California,517,40,16
+368,2020-11-13,Japan,Hokkaido,502,47,11
+369,2021-05-24,Germany,Bavaria,471,64,7
+370,2020-07-06,UK,Scotland,466,43,12
+371,2020-05-02,Germany,Saxony,472,50,15
+372,2020-11-11,USA,Texas,528,42,10
+373,2022-09-26,India,Delhi,488,46,10
+374,2023-02-17,Italy,Lazio,517,56,13
+375,2021-01-30,Germany,Berlin,471,57,9
+376,2022-01-03,USA,Florida,487,47,7
+377,2020-03-21,UK,Scotland,522,55,9
+378,2022-06-15,Japan,Hokkaido,486,55,8
+379,2022-09-30,Brazil,Bahia,503,61,8
+380,2021-01-17,Italy,Veneto,524,48,10
+381,2022-08-17,Germany,Berlin,486,48,5
+382,2023-02-09,Brazil,Bahia,464,57,6
+383,2022-12-23,UK,England,476,51,12
+384,2021-08-28,UK,Scotland,486,46,14
+385,2022-01-21,Brazil,Bahia,485,42,15
+386,2022-11-02,Japan,Tokyo,468,53,10
+387,2021-01-14,South Africa,Western Cape,522,51,9
+388,2021-05-04,USA,Texas,488,46,10
+389,2020-05-09,Germany,Saxony,468,49,7
+390,2022-12-09,South Africa,Gauteng,521,41,13
+391,2020-11-11,Japan,Hokkaido,501,70,14
+392,2022-04-19,Brazil,Rio de Janeiro,480,48,5
+393,2020-07-16,Germany,Bavaria,538,42,12
+394,2020-09-22,India,Maharashtra,475,43,8
+395,2021-02-17,UK,England,508,61,19
+396,2021-01-27,India,Karnataka,502,48,10
+397,2023-03-15,India,Maharashtra,508,59,7
+398,2022-09-30,South Africa,Western Cape,519,56,9
+399,2022-01-20,Brazil,Sao Paulo,479,41,9
+400,2020-05-25,Italy,Veneto,481,45,14

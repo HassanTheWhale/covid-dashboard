@@ -1,0 +1,27 @@
+Country,Region,Hospitals,ICU_Beds,Ventilators,Medical_Staff
+USA,California,5,156,187,2512
+USA,New York,10,289,183,748
+USA,Texas,28,335,126,2011
+USA,Florida,50,79,177,1588
+India,Maharashtra,38,70,38,1744
+India,Delhi,9,160,152,897
+India,Kerala,11,421,79,2677
+India,Karnataka,29,147,69,2655
+UK,England,47,177,165,1232
+UK,Scotland,40,433,162,2200
+UK,Wales,11,442,183,2861
+Italy,Lombardy,27,395,137,2249
+Italy,Lazio,11,135,66,2752
+Italy,Veneto,30,308,106,1147
+Brazil,Sao Paulo,39,357,133,1943
+Brazil,Rio de Janeiro,25,331,103,2022
+Brazil,Bahia,31,441,182,2263
+Germany,Bavaria,25,361,81,2806
+Germany,Berlin,39,159,116,2753
+Germany,Saxony,21,234,135,2332
+South Africa,Gauteng,30,50,28,1665
+South Africa,KwaZulu-Natal,43,58,152,1053
+South Africa,Western Cape,24,53,96,1408
+Japan,Tokyo,18,488,100,588
+Japan,Osaka,49,471,90,2767
+Japan,Hokkaido,37,334,166,2841
