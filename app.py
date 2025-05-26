@@ -198,12 +198,10 @@ with col[1]:
 
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown('#### Reports Count per Region per')
+    st.markdown('#### Cases per Report')
     casesDF_selected_area = casesDF_selected.copy();
     casesDF_selected_area["Month"] = casesDF_selected_area["Date"].dt.to_period("M").astype(str)
-
     casesDF_selected_area = casesDF_selected_area.groupby(["Month"])[["COVID_Cases", "Lung_Disease_Cases", "Deaths"]].sum().reset_index()
-
     casesDF_selected_area['Month'] = pd.to_datetime(casesDF_selected_area['Month'])
 
     months = casesDF_selected_area["Month"].unique()
@@ -220,25 +218,23 @@ with col[1]:
     df = pd.DataFrame(data)
     df = df.sort_values(by='Date')
 
-    print(df[cases[0]])
-
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=df['Date'], y=df[cases[0]],
         name="COVID Cases",
-        stackgroup='one' # define stack group
+        stackgroup='one'
     ))
 
     fig.add_trace(go.Scatter(
         x=df['Date'], y=df[cases[1]],
         name="Lung Disease Cases",
-        stackgroup='one' # define stack group
+        stackgroup='one'
     ))
 
     fig.add_trace(go.Scatter(
         x=df['Date'], y=df[cases[2]],
         name="Death Cases",
-        stackgroup='one' # define stack group
+        stackgroup='one'
     ))
     fig.update_traces(mode="markers+lines", hovertemplate=None)
     fig.update_layout(hovermode="x unified")
