@@ -251,7 +251,18 @@ with col[2]:
 
     st.markdown('#### Country Health Resources')
     
-    st.dataframe(facilitiesDF_selected[['Region', 'Hospitals', 'ICU Beds', 'Ventilators', 'Medical Staff']],
-                 hide_index=True,
-                 width=None,
-                 )
+    leaf = ['Hospitals', 'ICU Beds', 'Ventilators', 'Medical Staff']
+    data = []
+
+    for i, group in facilitiesDF_selected.iterrows():
+        for node in leaf:
+            new_row = {'Country': group['Country'], 'Region': group["Region"], 'type': node, 'count': group[node]}
+            data.append(new_row)
+    print(data)
+    df = pd.DataFrame(data)
+    print(df)
+
+    fig = px.treemap(df, path=['Country', "Region", 'type'], values='count')
+    fig.update_traces(root_color="lightgrey")
+    fig.update_layout(margin = dict(t=50, l=25, r=25, b=25))
+    st.plotly_chart(fig, use_container_width=True)
