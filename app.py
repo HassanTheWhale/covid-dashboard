@@ -13,8 +13,6 @@ from nltk.text import Text
 from collections import Counter
 import plotly.graph_objects as go
 
-nltk.download('stopwords')
-
 #######################
 # Page configuration
 st.set_page_config(
@@ -23,7 +21,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed")
 
-alt.themes.enable("dark")
 
 #######################
 # CSS styling
@@ -151,62 +148,76 @@ def calculate_death_cases_difference(input_df, input_country, input_year):
 
 #######################
 # Dashboard Main Panel
-col = st.columns((0.5, 1.5, 1), gap='medium')
+col = st.columns((1, 1.5, 1), gap='medium')
 
 with col[0]:
-    st.markdown(f'#### Total Numbers in {selected_country} - {selected_year}')
-    
-    df_covid_cases_difference_sorted = calculate_covid_cases_difference(casesDF, selected_country, selected_year)
-
-    if selected_year > 2020:
-        covid_Cases_year = format_number(df_covid_cases_difference_sorted["COVID_Cases_Year"].iloc[0])
-        covid_Cases_delta = format_number(df_covid_cases_difference_sorted["COVID_Cases_Diff"].iloc[0])
-    else:
-        covid_Cases_year = casesDF_selected['COVID_Cases'].sum()
-        covid_Cases_delta = ''
-    st.metric(label="COVID Cases", value=covid_Cases_year, delta=covid_Cases_delta)
-
-    df_lung_cases_difference_sorted = calculate_lung_cases_difference(casesDF, selected_country, selected_year)
-
-    if selected_year > 2020:
-        covid_Cases_year = format_number(df_lung_cases_difference_sorted["Lung_Cases_Year"].iloc[0])
-        covid_Cases_delta = format_number(df_lung_cases_difference_sorted["Lung_Cases_Diff"].iloc[0])
-    else:
-        covid_Cases_year = casesDF_selected['Lung_Disease_Cases'].sum()
-        covid_Cases_delta = ''
-    st.metric(label="Lung Disease Cases", value=covid_Cases_year, delta=covid_Cases_delta)
-
-    df_lung_cases_difference_sorted = calculate_death_cases_difference(casesDF, selected_country, selected_year)
-    if selected_year > 2020:
-        covid_Cases_year = format_number(df_lung_cases_difference_sorted["Death_Cases_Year"].iloc[0])
-        covid_Cases_delta = format_number(df_lung_cases_difference_sorted["Death_Cases_Diff"].iloc[0])
-    else:
-        covid_Cases_year = casesDF_selected['Deaths'].sum()
-        covid_Cases_delta = ''
-    st.metric(label="Death Cases", value=covid_Cases_year, delta=covid_Cases_delta)
-
-    with st.expander('About', expanded=True):
-        st.write('''
-            - :orange[**Course**]: CS-497
-            - :orange[**Project**]: Dashboard
-            - :orange[**Developed By**]: Hassan AlShammari
-            - :orange[**Dataset**]: COVID-19
-            ''')
-
-with col[1]:
-    st.markdown('#### Death vs Resources')
-    scatter_casesDF = casesDF_selected.copy();
-    scatter_casesDF = scatter_casesDF.groupby('Region')[['Deaths']].sum().reset_index();
-
-    scatter_facilitiesDF = facilitiesDF.copy();
-    scatter_facilitiesDF = scatter_facilitiesDF.groupby('Region')[['Medical Staff', 'ICU Beds', 'Ventilators']].mean().reset_index()
-    casesFacilitiesMerged = pd.merge(scatter_casesDF, scatter_facilitiesDF, on='Region')
-
-    df = px.data.iris()
-    fig = px.scatter(casesFacilitiesMerged, x="Medical Staff", y="Ventilators", color="Deaths", color_continuous_scale="Reds", hover_data=['Deaths'])
-
+    st.markdown('#### Regions vs COVID Cases')
+    casesDF_selected_bar = casesDF_selected.copy();
+    casesDF_selected_bar = casesDF_selected_bar.groupby('Region')["COVID_Cases"].sum().reset_index(name="COVID Cases")
+    casesDF_selected_bar = casesDF_selected_bar.sort_values(by="COVID Cases", ascending=False)
+    fig = px.bar(casesDF_selected_bar, x="Region", y="COVID Cases", color="Region")
     st.plotly_chart(fig, use_container_width=True)
 
+    # st.markdown(f'#### Total Numbers in {selected_country} - {selected_year}')
+    
+    # df_covid_cases_difference_sorted = calculate_covid_cases_difference(casesDF, selected_country, selected_year)
+
+    # if selected_year > 2020:
+    #     covid_Cases_year = format_number(df_covid_cases_difference_sorted["COVID_Cases_Year"].iloc[0])
+    #     covid_Cases_delta = format_number(df_covid_cases_difference_sorted["COVID_Cases_Diff"].iloc[0])
+    # else:
+    #     covid_Cases_year = casesDF_selected['COVID_Cases'].sum()
+    #     covid_Cases_delta = ''
+    # st.metric(label="COVID Cases", value=covid_Cases_year, delta=covid_Cases_delta)
+
+    # df_lung_cases_difference_sorted = calculate_lung_cases_difference(casesDF, selected_country, selected_year)
+
+    # if selected_year > 2020:
+    #     covid_Cases_year = format_number(df_lung_cases_difference_sorted["Lung_Cases_Year"].iloc[0])
+    #     covid_Cases_delta = format_number(df_lung_cases_difference_sorted["Lung_Cases_Diff"].iloc[0])
+    # else:
+    #     covid_Cases_year = casesDF_selected['Lung_Disease_Cases'].sum()
+    #     covid_Cases_delta = ''
+    # st.metric(label="Lung Disease Cases", value=covid_Cases_year, delta=covid_Cases_delta)
+
+    # df_lung_cases_difference_sorted = calculate_death_cases_difference(casesDF, selected_country, selected_year)
+    # if selected_year > 2020:
+    #     covid_Cases_year = format_number(df_lung_cases_difference_sorted["Death_Cases_Year"].iloc[0])
+    #     covid_Cases_delta = format_number(df_lung_cases_difference_sorted["Death_Cases_Diff"].iloc[0])
+    # else:
+    #     covid_Cases_year = casesDF_selected['Deaths'].sum()
+    #     covid_Cases_delta = ''
+    # st.metric(label="Death Cases", value=covid_Cases_year, delta=covid_Cases_delta)
+
+    stop_words = set(stopwords.words('english') + stopwords.words('portuguese'))
+    stop_words.update({'sees', 'urged', 'experts', 'new', 'cases', 'variant'})
+
+    def preprocess_text(text):
+        tokens = word_tokenize(text.lower())
+        filtered_tokens = [w for w in tokens if w.isalpha() and w not in stop_words]
+        return filtered_tokens
+
+    textVisulaizationDF = newsDF.copy()
+
+    textVisulaizationDF['Headline'] = textVisulaizationDF['Headline'].apply(preprocess_text)
+
+    all_tokens = [token for tokens in textVisulaizationDF['Headline'] for token in tokens]
+
+    word_freq = Counter(all_tokens)
+
+    # Generate Word Cloud
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(word_freq)
+
+    # Display
+    
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.title("Word Cloud of News Headline")
+
+    st.pyplot(plt)
+
+with col[1]:
     st.markdown('#### Cases per Report')
     casesDF_selected_area = casesDF_selected.copy();
     casesDF_selected_area["Month"] = casesDF_selected_area["Date"].dt.to_period("M").astype(str)
@@ -249,43 +260,6 @@ with col[1]:
     fig.update_layout(hovermode="x unified")
     st.plotly_chart(fig, use_container_width=True)
 
-    stop_words = set(stopwords.words('english') + stopwords.words('portuguese'))
-    stop_words.update({'sees', 'urged', 'experts', 'new'})
-
-    def preprocess_text(text):
-        tokens = word_tokenize(text.lower())
-        filtered_tokens = [w for w in tokens if w.isalpha() and w not in stop_words]
-        return filtered_tokens
-
-    textVisulaizationDF = newsDF.copy()
-
-    textVisulaizationDF['Headline'] = textVisulaizationDF['Headline'].apply(preprocess_text)
-
-    all_tokens = [token for tokens in textVisulaizationDF['Headline'] for token in tokens]
-
-    word_freq = Counter(all_tokens)
-
-    # Generate Word Cloud
-    wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(word_freq)
-
-    # Display
-    
-    plt.figure(figsize=(10, 5))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis('off')
-    plt.title("Word Cloud of News Headline")
-
-    st.pyplot(plt)
-
-with col[2]:
-    st.markdown('#### Regions vs COVID Cases')
-    casesDF_selected_bar = casesDF_selected.copy();
-    casesDF_selected_bar = casesDF_selected_bar.groupby('Region')["COVID_Cases"].sum().reset_index(name="COVID Cases")
-    casesDF_selected_bar = casesDF_selected_bar.sort_values(by="COVID Cases", ascending=False)
-    fig = px.bar(casesDF_selected_bar, x="Region", y="COVID Cases", color="Region")
-    st.plotly_chart(fig, use_container_width=True)
-
-
     st.markdown('#### Country Health Resources')
     
     leaf = ['Hospitals', 'ICU Beds', 'Ventilators', 'Medical Staff']
@@ -301,3 +275,26 @@ with col[2]:
     fig.update_traces(root_color="lightgrey")
     fig.update_layout(margin = dict(t=50, l=25, r=25, b=25))
     st.plotly_chart(fig, use_container_width=True)
+
+    
+with col[2]:
+    st.markdown('#### Death vs Resources')
+    scatter_casesDF = casesDF_selected.copy();
+    scatter_casesDF = scatter_casesDF.groupby('Region')[['Deaths']].sum().reset_index();
+
+    scatter_facilitiesDF = facilitiesDF.copy();
+    scatter_facilitiesDF = scatter_facilitiesDF.groupby('Region')[['Medical Staff', 'ICU Beds', 'Ventilators']].mean().reset_index()
+    casesFacilitiesMerged = pd.merge(scatter_casesDF, scatter_facilitiesDF, on='Region')
+
+    df = px.data.iris()
+    fig = px.scatter(casesFacilitiesMerged, x="Medical Staff", y="Ventilators", color="Deaths", color_continuous_scale="Reds", hover_data=['Deaths'])
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    with st.expander('About', expanded=True):
+        st.write('''
+            - :orange[**Course**]: CS-497
+            - :orange[**Project**]: Dashboard
+            - :orange[**Developed By**]: Hassan AlShammari
+            - :orange[**Dataset**]: COVID-19
+            ''')
