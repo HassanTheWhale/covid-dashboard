@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import plotly.express as px
+import plotly.graph_objects as go
 
 #######################
 # Page configuration
@@ -219,8 +220,28 @@ with col[1]:
     df = pd.DataFrame(data)
     df = df.sort_values(by='Date')
 
-    casesDF_selected_area = casesDF_selected_area.sort_values(by="Month")
-    fig = px.area(casesDF_selected_area, x="Month", y="Reports Count", color="Region")
+    print(df[cases[0]])
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=df['Date'], y=df[cases[0]],
+        name="COVID Cases",
+        stackgroup='one' # define stack group
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=df['Date'], y=df[cases[1]],
+        name="Lung Disease Cases",
+        stackgroup='one' # define stack group
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=df['Date'], y=df[cases[2]],
+        name="Death Cases",
+        stackgroup='one' # define stack group
+    ))
+    fig.update_traces(mode="markers+lines", hovertemplate=None)
+    fig.update_layout(hovermode="x unified")
     st.plotly_chart(fig, use_container_width=True)
 
 with col[2]:
