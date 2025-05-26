@@ -4,7 +4,16 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import plotly.express as px
+import matplotlib.pyplot as plt
+import nltk
+from wordcloud import WordCloud
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.text import Text
+from collections import Counter
 import plotly.graph_objects as go
+
+nltk.download('stopwords')
 
 #######################
 # Page configuration
@@ -240,6 +249,34 @@ with col[1]:
     fig.update_layout(hovermode="x unified")
     st.plotly_chart(fig, use_container_width=True)
 
+    stop_words = set(stopwords.words('english') + stopwords.words('portuguese'))
+    stop_words.update({'sees', 'urged', 'experts', 'new'})
+
+    def preprocess_text(text):
+        tokens = word_tokenize(text.lower())
+        filtered_tokens = [w for w in tokens if w.isalpha() and w not in stop_words]
+        return filtered_tokens
+
+    textVisulaizationDF = newsDF.copy()
+
+    textVisulaizationDF['Headline'] = textVisulaizationDF['Headline'].apply(preprocess_text)
+
+    all_tokens = [token for tokens in textVisulaizationDF['Headline'] for token in tokens]
+
+    word_freq = Counter(all_tokens)
+
+    # Generate Word Cloud
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(word_freq)
+
+    # Display
+    
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.title("Word Cloud of News Headline")
+
+    st.pyplot(plt)
+
 with col[2]:
     st.markdown('#### Regions vs COVID Cases')
     casesDF_selected_bar = casesDF_selected.copy();
@@ -258,9 +295,7 @@ with col[2]:
         for node in leaf:
             new_row = {'Country': group['Country'], 'Region': group["Region"], 'type': node, 'count': group[node]}
             data.append(new_row)
-    print(data)
     df = pd.DataFrame(data)
-    print(df)
 
     fig = px.treemap(df, path=['Country', "Region", 'type'], values='count')
     fig.update_traces(root_color="lightgrey")
