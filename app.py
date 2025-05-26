@@ -141,10 +141,10 @@ def calculate_death_cases_difference(input_df, input_country, input_year):
 
 #######################
 # Dashboard Main Panel
-col = st.columns((1.5, 4, 2.5), gap='small')
+col = st.columns((0.5, 1.5, 1), gap='medium')
 
 with col[0]:
-    st.markdown('#### COVID Cases')
+    st.markdown(f'#### Total Numbers in {selected_country} - {selected_year}')
     
     df_covid_cases_difference_sorted = calculate_covid_cases_difference(casesDF, selected_country, selected_year)
 
@@ -156,8 +156,6 @@ with col[0]:
         covid_Cases_delta = ''
     st.metric(label="COVID Cases", value=covid_Cases_year, delta=covid_Cases_delta)
 
-    st.markdown('#### Lung Disease Cases')
-    
     df_lung_cases_difference_sorted = calculate_lung_cases_difference(casesDF, selected_country, selected_year)
 
     if selected_year > 2020:
@@ -168,8 +166,6 @@ with col[0]:
         covid_Cases_delta = ''
     st.metric(label="Lung Disease Cases", value=covid_Cases_year, delta=covid_Cases_delta)
 
-    st.markdown('#### Death Cases')
-    
     df_lung_cases_difference_sorted = calculate_death_cases_difference(casesDF, selected_country, selected_year)
     if selected_year > 2020:
         covid_Cases_year = format_number(df_lung_cases_difference_sorted["Death_Cases_Year"].iloc[0])
@@ -179,25 +175,66 @@ with col[0]:
         covid_Cases_delta = ''
     st.metric(label="Death Cases", value=covid_Cases_year, delta=covid_Cases_delta)
 
+    with st.expander('About', expanded=True):
+        st.write('''
+            - :orange[**Course**]: CS-497
+            - :orange[**Project**]: Dashboard
+            - :orange[**Developed By**]: Hassan AlShammari
+            - :orange[**Dataset**]: COVID-19
+            ''')
+
 with col[1]:
-    st.markdown('#### Title')
+    st.markdown('#### Death vs Resources')
+    scatter_casesDF = casesDF_selected.copy();
+    scatter_casesDF = scatter_casesDF.groupby('Region')[['Deaths']].sum().reset_index();
+
+    scatter_facilitiesDF = facilitiesDF.copy();
+    scatter_facilitiesDF = scatter_facilitiesDF.groupby('Region')[['Medical Staff', 'ICU Beds', 'Ventilators']].mean().reset_index()
+    casesFacilitiesMerged = pd.merge(scatter_casesDF, scatter_facilitiesDF, on='Region')
+
+    df = px.data.iris()
+    fig = px.scatter(casesFacilitiesMerged, x="Medical Staff", y="Ventilators", color="Deaths", color_continuous_scale="Reds", hover_data=['Deaths'])
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown('#### Reports Count per Region per')
+    casesDF_selected_area = casesDF_selected.copy();
+    casesDF_selected_area["Month"] = casesDF_selected_area["Date"].dt.to_period("M").astype(str)
+
+    casesDF_selected_area = casesDF_selected_area.groupby(["Month"])[["COVID_Cases", "Lung_Disease_Cases", "Deaths"]].sum().reset_index()
+
+    casesDF_selected_area['Month'] = pd.to_datetime(casesDF_selected_area['Month'])
+
+    months = casesDF_selected_area["Month"].unique()
+    cases = ['COVID_Cases', "Lung_Disease_Cases", "Deaths"]
+
+    data = {'Date': months}
+    for case in cases:
+        casesPerDate = []
+        for date in months:
+            df = casesDF_selected_area[(casesDF_selected_area["Month"] == date)]
+            casesPerDate.append(df[case].sum())
+        data[case] = casesPerDate
     
+    df = pd.DataFrame(data)
+    df = df.sort_values(by='Date')
+
+    casesDF_selected_area = casesDF_selected_area.sort_values(by="Month")
+    fig = px.area(casesDF_selected_area, x="Month", y="Reports Count", color="Region")
+    st.plotly_chart(fig, use_container_width=True)
 
 with col[2]:
+    st.markdown('#### Regions vs COVID Cases')
+    casesDF_selected_bar = casesDF_selected.copy();
+    casesDF_selected_bar = casesDF_selected_bar.groupby('Region')["COVID_Cases"].sum().reset_index(name="COVID Cases")
+    casesDF_selected_bar = casesDF_selected_bar.sort_values(by="COVID Cases", ascending=False)
+    fig = px.bar(casesDF_selected_bar, x="Region", y="COVID Cases", color="Region")
+    st.plotly_chart(fig, use_container_width=True)
+
+
     st.markdown('#### Country Health Resources')
     
     st.dataframe(facilitiesDF_selected[['Region', 'Hospitals', 'ICU Beds', 'Ventilators', 'Medical Staff']],
                  hide_index=True,
                  width=None,
                  )
-
-    st.markdown('#### Regions vs COVID Cases Bar Chart')
-    casesDF_selected_area = casesDF_selected.copy();
-    casesDF_selected_area = casesDF_selected_area.groupby('Region')["COVID_Cases"].sum().reset_index(name="COVID Cases")
-    casesDF_selected_area = casesDF_selected_area.sort_values(by="COVID Cases", ascending=False)
-    fig = px.bar(casesDF_selected_area, x="Region", y="COVID Cases", color="Region")
-    st.plotly_chart(fig, use_container_width=False)
-    with st.expander('About', expanded=True):
-        st.write('''
-            - :orange[**Title**]: ...
-            ''')
